@@ -1,8 +1,13 @@
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # LaTeX on Markdown
 
-Using $\LaTeX$ to write formulas on Markdown. It can be displayed inline, e.g. $e=mc^2$, or as a block:
+Using `$\LaTeX$` to write formulas on Markdown. It can be displayed inline, e.g. `$e=mc^2$`, or as a block:
 
-$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$
+`$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$`
 
 Docs: [LaTeX introduction](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
