@@ -1,13 +1,27 @@
-<script src="//yihui.org/js/math-code.js"></script>
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+<style TYPE="text/css">
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 # LaTeX on Markdown
 
-Using `$\LaTeX$` to write formulas on Markdown. It can be displayed inline, e.g. `$e=mc^2$`, or as a block:
+Using $\LaTeX$ to write formulas on Markdown. It can be displayed inline, e.g. $e=mc^2$, or as a block:
 
-`$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$`
+$$\int_\Omega \nabla u \cdot \nabla v~dx = \int_\Omega fv~dx$$
 
 Docs: [LaTeX introduction](https://en.wikibooks.org/wiki/LaTeX/Mathematics).
 
